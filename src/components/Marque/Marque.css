@@ -1,0 +1,15 @@
+.marque-container {
+  background: #faf3ea;
+  width: 100%;
+  height: 19vw;
+
+  color: #242424;
+}
+.marque-container img {
+    width: 4.2vw;
+    height: 4.2vw;
+    color: #242424;
+}
+.marque-container p {
+  color: #898989;
+}

@@ -4,6 +4,7 @@ import { CiShare2 } from "react-icons/ci";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import type { Product } from "../../types/product.interface";
+import { Link } from "react-router-dom";
 
 interface Props {
   product: Product;
@@ -33,8 +34,20 @@ const ProductCard: React.FC<Props> = ({ product }) => {
               )}
             </div>
           </div>
-          <div className="flex flex-col justify-center align-center product-overlay gap-1">
-            <button className="add-to-cart-btn fs-base font-weight-600 px-4 py-1">
+
+          <Link
+            to={`/product/${product.id}`}
+            className="text-line-none flex flex-col justify-center align-center product-overlay gap-1"
+            style={{ zIndex: 2 }}
+          >
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                alert("hello");
+              }}
+              className=" add-to-cart-btn fs-base font-weight-600 px-4 py-1"
+            >
               Add to cart
             </button>
             <div className="flex align-center text-white gap-1 fs-base">
@@ -49,7 +62,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
                 Like
               </span>
             </div>
-          </div>
+          </Link>
         </div>
       </article>
     </>

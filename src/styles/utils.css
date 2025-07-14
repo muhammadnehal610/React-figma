@@ -173,6 +173,9 @@
 .mr-3 {
   margin-right: 3vw;
 }
+.mb-4{
+  margin-bottom: 4vw;
+}
 .mx-3 {
   margin-left: 3vw;
   margin-right: 3vw;
@@ -180,6 +183,10 @@
 .my-3 {
   margin-top: 3vw;
   margin-bottom: 3vw;
+}
+
+.my-4{
+  margin-block: 4vw;
 }
 
 /* Padding */
@@ -469,4 +476,12 @@
 
 .text-white {
   color: white;
+}
+
+.text-black{
+  color: #000;
+}
+
+.text-line-none{
+  text-decoration: none;
 }

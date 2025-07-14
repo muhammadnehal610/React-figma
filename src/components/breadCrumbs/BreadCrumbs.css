@@ -1,0 +1,24 @@
+.bread-crumbs-container {
+  background-image: url("../../assets/breadcrumbs.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+
+  .bg-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff75;
+    backdrop-filter: blur(2.5px);
+    z-index: 1;
+  }
+}
+
+.bread-crumbs {
+  z-index: 2;
+}

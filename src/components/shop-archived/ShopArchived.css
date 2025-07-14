@@ -1,0 +1,49 @@
+.shop-archived-container {
+  background: #f9f1e7;
+  height: 7vw;
+
+  .shop-filter {
+    width: 87%;
+    margin: auto;
+    height: 100%;
+  }
+}
+
+.filter-text {
+  border-left: 1px solid #9f9f9f;
+}
+
+.filter-input {
+  border: 0;
+  height: 4vw;
+  color: #9f9f9f;
+  background: #fff;
+}
+.filter-input-1 {
+  width: 4vw;
+}
+.filter-input-2 {
+  width: 12vw;
+}
+
+.filter-input:focus {
+  outline: 0;
+}
+
+.pagination-btn-active {
+  background: var(--btn-color) !important;
+  color: #fff;
+}
+.pagination-btn {
+  width: 4vw;
+  height: 4vw;
+  background: #f9f1e7;
+}
+
+.pagination-btn-next {
+  border: 0;
+  width: 7vw;
+}
+.pagination-btn-next:focus {
+  outline: 0;
+}
