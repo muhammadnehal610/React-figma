@@ -1,6 +1,7 @@
 import slide1 from "../../assets/slide1.png";
 import slide2 from "../../assets/slide2.png";
 import slide3 from "../../assets/slide3.png";
+import slide4 from "../../assets/product8.jpg";
 import type { Slide } from "../../types/slide.interface";
 import Slider from "../slider/Slider";
 import "./HeroCarousel.css";
@@ -26,25 +27,7 @@ const slides: Slide[] = [
   },
   {
     id: 4,
-    image: slide3,
-    title: "03 — Living Room",
-    subtitle: "Cozy and Calm",
-  },
-  {
-    id: 5,
-    image: slide3,
-    title: "03 — Living Room",
-    subtitle: "Cozy and Calm",
-  },
-  {
-    id: 6,
-    image: slide3,
-    title: "03 — Living Room",
-    subtitle: "Cozy and Calm",
-  },
-  {
-    id: 7,
-    image: slide3,
+    image: slide4,
     title: "03 — Living Room",
     subtitle: "Cozy and Calm",
   },
@@ -53,8 +36,8 @@ const slides: Slide[] = [
 const HeroCarousel = () => {
   return (
     <section className="hero-carousel-section">
-      <div className="hero-carousel-container flex gap-05">
-        <div className="left-text col-40 flex flex-col gap-1 pl-7 justify-center">
+      <div className="hero-carousel-container flex align-center gap-2">
+        <div className="left-text col-40 flex flex-col gap-1 justify-center box-1">
           <h1 className="m-0 fs-40 font-weight-700 lh-1-2">
             50+ Beautiful rooms inspiration
           </h1>

@@ -4,6 +4,14 @@
   color: #3a3a3a;
 }
 
+.hero-carousel-container {
+  height: 47vw;
+
+  .box-1 {
+    padding-left: 5.5vw;
+  }
+}
+
 .description-text {
   color: #616161;
 }
@@ -22,7 +30,7 @@
 
 .carousel-track {
   display: flex;
-  transition: transform 0.6s cubic-bezier(.77,0,.18,1);
+  transition: transform 0.6s cubic-bezier(0.77, 0, 0.18, 1);
   will-change: transform;
 }
 

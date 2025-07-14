@@ -5,6 +5,7 @@ import Catelog from "../../components/catelog/Catelog";
 import ProductCard from "../../components/product-card/ProductCard";
 import { products } from "../../data/products";
 import HeroCarousel from "../../components/heroCarousel/HeroCarousel";
+import Grid from "../../components/grid/Grid";
 
 const Home: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
         </div>
       </section>
       <HeroCarousel />
+      <Grid />
     </>
   );
 };

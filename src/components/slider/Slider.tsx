@@ -13,6 +13,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import React, { useState } from "react";
 import type { Slide } from "../../types/slide.interface";
 
+import { MdArrowRightAlt } from "react-icons/md";
 interface SliderProps {
   slideData: Slide[];
 }
@@ -29,7 +30,7 @@ const Slider: React.FC<SliderProps> = ({ slideData }) => {
   return (
     <>
       <Swiper
-        slidesPerView="auto"
+        slidesPerView={2.2}
         spaceBetween={20}
         loop={true}
         pagination={{ clickable: true }}
@@ -40,6 +41,17 @@ const Slider: React.FC<SliderProps> = ({ slideData }) => {
       >
         {slideData.map((slide) => (
           <SwiperSlide key={slide.id}>
+            <div className="slide-inner-card ml-2 mb-2 align-end">
+              <div className="slide-inner-card-content flex flex-col py-2 px-2 ">
+                <p className="m-0 font-weight-600"> {slide.title}</p>
+                <h2 className="m-0 font-weight-500 fs-base">
+                  {slide.subtitle}
+                </h2>
+              </div>
+              <div className="slide-inner-card-cta flex align-center px-1">
+                <MdArrowRightAlt />
+              </div>
+            </div>
             <img src={slide.image} alt={slide.title} />
           </SwiperSlide>
         ))}
