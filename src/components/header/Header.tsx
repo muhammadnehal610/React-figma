@@ -7,7 +7,11 @@ import cartIcon from "../../assets/ant-design_shopping-cart-outlined.svg";
 
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-const Header: React.FC = () => {
+
+interface Props {
+  onCartClick: () => void;
+}
+const Header: React.FC<Props> = ({ onCartClick }) => {
   return (
     <header className="flex-align-center">
       <div className="header-container flex-center-between">
@@ -32,7 +36,12 @@ const Header: React.FC = () => {
           <img src={accountIcon} />
           <img src={searchIcon} alt="" />
           <img src={heartIcon} alt="" />
-          <img src={cartIcon} alt="" />
+          <img
+            src={cartIcon}
+            alt="Cart"
+            onClick={onCartClick}
+            style={{ cursor: "pointer" }}
+          />
         </div>
       </div>
     </header>

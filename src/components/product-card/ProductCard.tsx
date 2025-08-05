@@ -15,13 +15,17 @@ const ProductCard: React.FC<Props> = ({ product }) => {
     <>
       <article>
         <div className="flex flex-col product-container">
-          <img src={product.image} alt="Syltherine" className="product-image" />
+          <img
+            src={product.image[1]}
+            alt="Syltherine"
+            className="product-image"
+          />
           <div className="flex flex-col px-1 pt-1 pb-2 meta-data">
             <h2 className="m-0 fs-xl font-weight-600 meta-data-color-primery">
               {product.name}
             </h2>
             <h3 className="m-0 fs-base font-weight-500 meta-data-color-secondary">
-              {product.description}
+              {product.subtitle}
             </h3>
             <div className="flex align-center justify-between">
               <span className="fs-lg font-weight-600 meta-data-color-primery">
@@ -36,7 +40,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
           </div>
 
           <Link
-            to={`/product/${product.id}`}
+            to={`/shop/${product.id}`}
             className="text-line-none flex flex-col justify-center align-center product-overlay gap-1"
             style={{ zIndex: 2 }}
           >

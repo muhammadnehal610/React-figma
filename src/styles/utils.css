@@ -8,19 +8,24 @@
 .col-30 {
   width: 35%;
 }
-.col-70 {
-  width: 65%;
-}
 .col-40 {
   width: 40%;
-}
-.col-60 {
-  width: 60%;
 }
 .col-50 {
   width: 50%;
 }
-
+.col-60 {
+  width: 60%;
+}
+.col-65 {
+  width: 65%;
+}
+.col-70{
+  width: 70%;
+}
+.col-85{
+  width: 85%
+}
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -48,7 +53,9 @@
 .justify-end{
   justify-content: flex-end;
 }
-
+.text-justify{
+  text-align: justify;
+}
 .flex-center {
   display: flex;
   align-items: center;
@@ -99,6 +106,9 @@
    SPACING (VW based for your design)
 ================================= */
 /* Margin */
+.m-auto{
+  margin: auto;
+}
 .m-0 {
   margin: 0;
 }
@@ -271,6 +281,9 @@
 .px-5 {
   padding-left: 5vw;
   padding-right: 5vw;
+}
+.px-6 {
+  padding-inline: 6vw;
 }
 
 .py-1 {

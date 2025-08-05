@@ -10,7 +10,7 @@ import "./Slider.css";
 
 // Import required modules
 import { Pagination, Navigation } from "swiper/modules";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import type { Slide } from "../../types/slide.interface";
 
 import { MdArrowRightAlt } from "react-icons/md";
@@ -19,14 +19,14 @@ interface SliderProps {
 }
 
 const Slider: React.FC<SliderProps> = ({ slideData }) => {
-  const [slides, setSlides] = useState<Slide[]>(slideData);
+  // const [slides, setSlides] = useState<Slide[]>(slideData);
 
-  const handleSlideChange = () => {
-    setSlides((prevSlides) => {
-      const [first, ...rest] = prevSlides;
-      return [...rest, first];
-    });
-  };
+  // const handleSlideChange = () => {
+  //   setSlides((prevSlides) => {
+  //     const [first, ...rest] = prevSlides;
+  //     return [...rest, first];
+  //   });
+  // };
   return (
     <>
       <Swiper
@@ -37,7 +37,7 @@ const Slider: React.FC<SliderProps> = ({ slideData }) => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
-        onSlideChangeTransitionEnd={handleSlideChange}
+        // onSlideChangeTransitionEnd={handleSlideChange}
       >
         {slideData.map((slide) => (
           <SwiperSlide key={slide.id}>

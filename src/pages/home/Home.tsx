@@ -24,7 +24,10 @@ const Home: React.FC = () => {
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-          <Link to={'/shop'} className="text-line-none show-more-btn px-5 py-1 my-2 fs-base font-weight-600">
+          <Link
+            to={"/shop"}
+            className="text-line-none show-more-btn px-5 py-1 my-2 fs-base font-weight-600"
+          >
             Show More
           </Link>
         </div>

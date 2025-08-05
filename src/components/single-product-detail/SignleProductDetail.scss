@@ -1,0 +1,68 @@
+.product-area-container {
+  .product-detail-parent {
+    padding-bottom: 4vw;
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+  .product-detail {
+    padding-bottom: 4vw;
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+  .info-tab {
+    color: var(--secondary-text-color);
+  }
+  .info-tab.active {
+    color: black;
+  }
+}
+
+.side-image {
+  height: 5.7vw;
+  width: 5.4vw;
+}
+
+.main-image {
+  height: 35vw;
+  width: 30vw;
+}
+
+.veriation-size {
+  border-radius: 0.4vw;
+  padding-inline: 0.7vw;
+  padding-block: 0.4vw;
+  color: black;
+  background: var(--secondary-bg-color);
+}
+.veriation-size.active {
+  background: var(--btn-color);
+  color: white;
+}
+
+.veriation-color {
+  width: 2.2vw;
+  height: 2.2vw;
+  border-radius: 50%;
+}
+
+.veriation-color.active {
+  border: 1px solid var(--btn-color);
+}
+
+.action-btns {
+  .quintity-container {
+    display: flex;
+    width: 7vw;
+    justify-content: space-between;
+    height: 4.5vw;
+    align-items: center;
+    border: 1px solid var(--secondary-text-color);
+    padding-inline: 1vw;
+    border-radius: 0.6vw;
+  }
+  button {
+    padding-inline: 3.5vw;
+    font-size: 1.4vw;
+    background: none;
+    border: 1px solid;
+    border-radius: 0.7vw;
+  }
+}
